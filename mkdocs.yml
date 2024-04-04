@@ -1,86 +1,59 @@
 site_name: Lester Zhang
-site_description: Zhang Jiachen's personal website
-site_author: Zhang Jiachen
+site_description: Jiachen Zhang's personal website.
+site_author: 张嘉宸
+# site_url:
 
-copyright: Copyright &copy; 2024 <a href="https://github.com/daisymilo/my_mkdocs">Zhang Jiachen</a>
+copyright: Copyright &copy; 2024 <a href="">Jiachen Zhang</a>
 
 
 theme:
   name: material
-  features:
-    - announce.dismiss
-    - navigation.footer
-    - search.suggest
-    - search.highlight
-    - search.share
-    - content.action.edit
-    - content.action.view
-    - content.code.copy
-    - content.code.select
-    - content.code.annotate
-    - content.tabs.link
-    - toc.follow
-    - navigation.prune
-    - navigation.tabs
-    - navigation.path
-    - navigation.indexes
-    - navigation.top
+  custom_dir: overrides
   palette:
     # Palette toggle for light mode
     - scheme: default
-      primary: teal
-      accent: purple
+      primary: custom
+      accent: custom
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     # Palette toggle for dark mode
     - scheme: slate
-      primary: teal
-      accent: lime
+      primary: custom
+      accent: custom
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+
 
 extra:
   social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/daisymilo/my_mkdocs
-    - icon: fontawesome/solid/paper-plane
-      link: mailto:lester.zhang99@gmail.com
-
+    - icon: fontawesome/brands/github
+      link: https://github.com/daisymilo/LesterZhang
 
 markdown_extensions:
-  - abbr
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
-  - toc:
-      permalink: true
-  - tables
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.tabbed:
-      alternate_style: true
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.tasklist:
-      custom_checkbox: true
+  - attr_list
   - pymdownx.emoji:
-     emoji_index: !!python/name:material.extensions.emoji.twemoji
-     emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
