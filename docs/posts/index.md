@@ -1,7 +1,7 @@
 ---
-title: Blog
+title: 测试
 hide:
   - footer
 ---
 
-# Blog
+# 测试页面

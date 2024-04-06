@@ -13,7 +13,7 @@ hide:
 
 Jiachen Zhang, aka Lester Zhang, is previously a master's degree student in finance at Shanghai University of International Business and Economics. With a focus on empirical asset pricing and market microstructure, his work has been published at journals including **_Economics Letters_**, **_Applied Economics_**, **_The North American Journal of Economics and Finance_**, **《经济管理》**, and/or under review at **_Journal of International Money and Finance_**, **《会计研究》**. 
 
-:octicons-arrow-right-24: [个人简历](https://lester-zhang.com/cv.pdf)
+:octicons-arrow-right-24: [个人简历](/cv.pdf)
 
 <!-- Mingze has a strong background in programming and received First Prize in the 2010 National Olympiad in Informatics in Provinces (NOIP). His PhD thesis involves large-scale textual analysis and novel machine learning application, leading to a $500,000 grant from the Australian Research Council (ARC) Discovery Project financing his postdoctoral fellowship. He also has a Grad.Cert. in computing from UNSW with High Distinction, on, e.g., database, crypto and distributed ledger technology.  -->
 
