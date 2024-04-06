@@ -78,12 +78,12 @@ mkdocs-marterial提供了从制作到发布网页的[新手教程](https://squid
 在教程之外需要补充的是，使用CDN加速服务前需要购买流量，否则配置完成后网页无法访问。对于腾讯云，可以在CDN产品页面进行购买，资源包类型应选择**流量**，适合区域选择**亚太1区**，资源包规格选择**100GB**：
 
 <div style="text-align: center;">
-    <img src="\images\tencent_cloud1.png" height="300", width="500" >
+    <img src="/images/tencent_cloud1.png" height="300", width="500" >
 </div>
 
 在全部配置完成后，需要在域名管理中检查**HTTPS配置**中的**HTTPS服务**是否打开，处于关闭状态时网页可能无法正常访问（该服务每月提供300万次免费的访问，足够我们的个人网站使用。）：
 
-![tencent_cloud2](\images\tencent_cloud2.png)
+![tencent_cloud2](/images/tencent_cloud2.png)
 
 如果在腾讯云的CDN服务概览页面可以看到**用量概览**出现变动，则说明CDN配置成功，网页已经成功上线。
 
