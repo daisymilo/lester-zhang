@@ -8,6 +8,7 @@ copyright: Copyright &copy; 2024 <a href="">Jiachen Zhang</a>
 
 theme:
   name: material
+  language: zh
   custom_dir: overrides
   palette:
     # Palette toggle for light mode
@@ -16,30 +17,61 @@ theme:
       accent: custom
       toggle:
         icon: material/toggle-switch
-        name: Switch to dark mode
+        name: 切换深色主题
     # Palette toggle for dark mode
     - scheme: slate
       primary: custom
       accent: custom
       toggle:
         icon: material/toggle-switch-off-outline
-        name: Switch to light mode
+        name: 切换浅色主题
   features:
-    - navigation.tabs
-    - navigation.sections
-    - toc.integrate
-    - navigation.top
+    - announce.dismiss
+    - navigation.footer
     - search.suggest
     - search.highlight
-    - content.tabs.link
-    - content.code.annotation
+    - search.share
+    - content.action.edit
+    - content.action.view
     - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+    - navigation.prune
+    - navigation.tabs
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+
+
+nav:
+  - 主页: index.md
+  - 关于网页:
+      - posts/posts/make_site.md
+  - Blog:
+      - posts/index.md
+
+
+extra_css:
+  - stylesheets/extra.css
 
 
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/daisymilo/LesterZhang
+
+
+plugins:
+  - blog:
+      blog_dir: posts
+      post_url_format: "{slug}"
+      archive_toc: true
+      categories_toc: true
+      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 
 markdown_extensions:
   - pymdownx.highlight:

@@ -3,7 +3,7 @@ template: home.html
 hide:
   - toc
   - footer
---- 
+---
 
 # 张嘉宸 (Jiachen Zhang)
 
