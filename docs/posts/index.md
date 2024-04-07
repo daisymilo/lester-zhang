@@ -1,7 +1,7 @@
 ---
-title: 测试
+title: 博客
 hide:
   - footer
 ---
 
-# 测试页面
+# 我的文章

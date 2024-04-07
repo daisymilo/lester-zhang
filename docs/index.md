@@ -13,10 +13,7 @@ hide:
 
 Jiachen Zhang, aka Lester Zhang, is previously a master's degree student in finance at Shanghai University of International Business and Economics. With a focus on empirical asset pricing and market microstructure, his work has been published at journals including **_Economics Letters_**, **_Applied Economics_**, **_The North American Journal of Economics and Finance_**, **《经济管理》**, and/or under review at **_Journal of International Money and Finance_**, **《会计研究》**. 
 
-:octicons-arrow-right-24: [个人简历](/cv.pdf)
-
-<!-- Mingze has a strong background in programming and received First Prize in the 2010 National Olympiad in Informatics in Provinces (NOIP). His PhD thesis involves large-scale textual analysis and novel machine learning application, leading to a $500,000 grant from the Australian Research Council (ARC) Discovery Project financing his postdoctoral fellowship. He also has a Grad.Cert. in computing from UNSW with High Distinction, on, e.g., database, crypto and distributed ledger technology.  -->
-
+<!--:octicons-arrow-right-24: [个人简历](/cv.pdf)-->
 
 ## 教育经历
 
@@ -38,3 +35,11 @@ Jiachen Zhang, aka Lester Zhang, is previously a master's degree student in fina
 - 上海对外经贸大学“优秀学生干部” (校级，前1%)
 - 上海对外经贸大学“优秀学生” （校级，前10%）
 - “华为杯”第十八届中国研究生数学建模竞赛二等奖 （国家级）
+
+
+## 关于本站
+我发现单纯的PDF简历在篇幅和形式上有很大限制，所以我制作了个人主页向大家展示和分享我的工作。
+
+这个网站是通过[mkdocs-material](https://squidfunk.github.io/mkdocs-material/)制作的，并依靠[GitHub Pages](https://pages.github.com/)服务部署到互联网上。我还使用了阿里云的DNS解析服务设置了自定义的域名，也就是[lester-zhang.com](https://lester-zhang.com)，最后利用腾讯云的CDN加速服务优化了网站的访问速度。你可以跟随我撰写的教程来搭建一个类似的网站：
+
+:octicons-arrow-right-24: [我是如何搭建个人主页的](posts/posts/make_site.md)

@@ -47,9 +47,7 @@ theme:
 
 nav:
   - 主页: index.md
-  - 关于网页:
-      - posts/posts/make_site.md
-  - 测试:
+  - 博客:
       - posts/index.md
 
 
