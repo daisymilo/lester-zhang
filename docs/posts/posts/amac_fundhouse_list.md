@@ -7,12 +7,12 @@ tags:
     - 数据接口
 ---
 # 中基协-基金管理人名录数据
-中国证券投资基金业协会，aka 中基协，提供了大量基金行业的数据。其[服务大厅](https://www.amac.org.cn/fwdt/wyc/jgcprycx/jgcx/)提供了有关机构、产品和人员数据的查询服务。这篇文章介绍如何爬取**公募基金管理人名录**数据。
+中国证券投资基金业协会，aka 中基协，提供了大量基金行业的数据。其<a href="https://www.amac.org.cn/fwdt/wyc/jgcprycx/jgcx/" target="_blank">服务大厅</a>提供了有关机构、产品和人员数据的查询服务。这篇文章介绍如何爬取**公募基金管理人名录**数据。
 
 <!-- more -->
 
 ## 数据接口
-我们先尝试获取数据接口， 从服务大厅的机构查询入口可以找到[公募基金管理人名录](https://www.amac.org.cn/fwdt/wyc/jgcprycx/jgcx/gmjjglrml/)查询。在我撰写这篇文章时共有158条记录，共16页，数据量不大。
+我们先尝试获取数据接口， 从服务大厅的机构查询入口可以找到<a href="https://www.amac.org.cn/fwdt/wyc/jgcprycx/jgcx/gmjjglrml/" target="_blank">公募基金管理人名录</a>查询。在我撰写这篇文章时共有158条记录，共16页，数据量不大。
 
 <div style="text-align: center;">
 <img src="/images/amac_fundhouse.png" width="650" >
@@ -58,7 +58,7 @@ requests.get(url)
 # ... SSLError: [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] ...
 ```
 
-这是因为网站使用了旧版本的协议，与requests产生了冲突，stack overflow的帖子提供了[解决方法](https://stackoverflow.com/a/73519818/15903747)：
+这是因为网站使用了旧版本的协议，与requests产生了冲突，stack overflow的帖子提供了<a href="https://stackoverflow.com/a/73519818/15903747" target="_blank">解决方法</a>：
 
 ```python
 import requests
