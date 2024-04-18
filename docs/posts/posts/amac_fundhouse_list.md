@@ -1,11 +1,11 @@
 ---
 date: 2024-04-12
 categories:
-    - 爬虫
+    - 技术
 tags:
     - 网络爬虫
-    - 数据接口
 ---
+
 # 中基协-基金管理人名录数据
 中国证券投资基金业协会，aka 中基协，提供了大量基金行业的数据。其<a href="https://www.amac.org.cn/fwdt/wyc/jgcprycx/jgcx/" target="_blank">服务大厅</a>提供了有关机构、产品和人员数据的查询服务。这篇文章介绍如何爬取**公募基金管理人名录**数据。
 
