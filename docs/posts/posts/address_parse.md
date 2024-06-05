@@ -4,6 +4,8 @@ categories:
   - 技术
 tags:
   - 文本分析
+  - Python
+  - JavaScript
 ---
 
 # 公司地址智能解析（基于JavaScript接口）
