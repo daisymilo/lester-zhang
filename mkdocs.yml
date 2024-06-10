@@ -49,7 +49,7 @@ nav:
   - 主页: index.md
   - 学术研究:
       - research.md
-  - 博客:
+  - 研究笔记:
       - posts/index.md
 
 
@@ -81,6 +81,9 @@ plugins:
       tags_file: tags.md
 
 markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite

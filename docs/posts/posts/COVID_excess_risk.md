@@ -1,9 +1,11 @@
 ---
 date: 2024-04-12
 categories:
-    - 研究笔记
+    - 我的论文
 tags:
-    - 论文代码
+    - Python
+    - 已发表
+    - 实证
 ---
 
 # 估计COVID-19超额风险和超常收益率
@@ -11,7 +13,8 @@ tags:
 <a href="https://doi.org/10.1016/j.najef.2023.102004" target="_blank">
   Systematic COVID risk, idiosyncratic COVID risk and stock returns
 </a>
-这篇论文中，我们使用了基于事件的方法来估计COVID-19爆发期间个股的超额风险和超常收益，这里对该方法进行详细介绍。
+这篇论文中，我们使用了基于事件的方法来估计COVID-19爆发期间个股的超额风险和超常收益。
+这里对该方法进行详细介绍。
 
 <!-- more -->
 
@@ -37,7 +40,7 @@ $R_{i,t}-R_{f,t}=\alpha_i+\alpha_{COVID_i}\times d\ +\ (\beta_i+\beta_{COVID_i}\
 ## Python代码
 我们需要准备日度个股$R_{i,t}-R_{f,t}$(risk premium)数据和$R_{m,t}-R_{f,t}$(market premium)数据，类似下表：
 <div style="text-align: center;">
-<img src="/images/research_note1_1.png" width="350" >
+<img src="/images/research_note1_1.png" width="400" >
 </div>
 
 全局变量定义event window和estimation window，筛选出窗口内的数据，然后定义虚拟变量$d$
@@ -50,7 +53,11 @@ data_esti = data.query("(date >= @estimation_window[0] and date <= @estimation_w
 data_esti["d"] = data_esti.eval("date >= @event_window[0] and date <= @event_window[1]").astype(int)
 ```
 
-将估计方法封装到了一个函数内，其中group参数表示单支股票的数据，min_esti_window和min_event_window参数表示对观测值数量进行要求。
+将估计方法封装到了一个函数内：
+
+??? quote "函数参数"
+
+    其中**group**参数表示单支股票的数据，**min_esti_window**和**min_event_window**参数表示对观测值数量进行要求。
 
 ```python
 # 使用了statsmodels的公式api
@@ -126,5 +133,5 @@ excess_covid_beta_IVOL = data_esti.groupby("code").progress_apply(covid_beta_IVO
 
 估计结果如下：
 <div style="text-align: center;">
-<img src="/images/research_note1_2.png" width="350" >
+<img src="/images/research_note1_2.png" width="400" >
 </div>

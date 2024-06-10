@@ -1,7 +1,7 @@
 ---
 date: 2024-04-18
 categories:
-  - 技术
+  - 数据处理与分析
 tags:
   - 文本分析
   - Python
