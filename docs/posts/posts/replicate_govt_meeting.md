@@ -14,6 +14,10 @@ Jun Pan and Qing Peng在<a href="https://papers.ssrn.com/sol3/papers.cfm?abstrac
 
 在这里，我对论文中的Figure 2和 Table 2进行复现，并提供代码。
 
+<div style="text-align: center;">
+<img src="/images/replicate_govt_meeting_fig2_replicate.png" width="550" >
+</div>
+
 <!-- more -->
 
 ## 复现结果

@@ -16,6 +16,10 @@ tags:
 这篇论文中，我们使用了基于事件的方法来估计COVID-19爆发期间个股的超额风险和超常收益。
 这里对该方法进行详细介绍。
 
+<div style="text-align: center;">
+<img src="/images/research_1.png" width="600" >
+</div>
+
 <!-- more -->
 
 ## 估计思路

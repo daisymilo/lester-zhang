@@ -41,3 +41,9 @@ input[type="radio"] {
 label {
   font-weight: normal;
 }
+
+.mermaid {
+    display: flex;
+    justify-content: center;
+    font-family: 'Arial', 'Microsoft YaHei', sans-serif;
+}

@@ -10,13 +10,20 @@ tags:
 # 中基协-基金管理人名录数据
 中国证券投资基金业协会，aka 中基协，提供了大量基金行业的数据。其<a href="https://www.amac.org.cn/fwdt/wyc/jgcprycx/jgcx/" target="_blank">服务大厅</a>提供了有关机构、产品和人员数据的查询服务。这篇文章介绍如何爬取**公募基金管理人名录**数据。
 
+| 序号  | 公司名称         | 注册地 | 辖区  | 官方网址             | 客服电话                     |
+|-----|--------------|-----|-----|------------------|--------------------------|
+| 1   | 国泰基金管理有限公司   | 上海  | 上海  | www.gtfund.com   | 4008888688/ 021-31089000 |
+| 2   | 南方基金管理股份有限公司 | 深圳  | 深圳  | www.nffund.com   | 4008898899               |
+| 3   | 华夏基金管理有限公司   | 北京  | 北京  | www.chinaamc.com | 4008186666               |
+| ... | ...          | ... | ... | ...              | ...                      |
+
 <!-- more -->
 
 ## 数据接口
 我们先尝试获取数据接口， 从服务大厅的机构查询入口可以找到<a href="https://www.amac.org.cn/fwdt/wyc/jgcprycx/jgcx/gmjjglrml/" target="_blank">公募基金管理人名录</a>查询。在我撰写这篇文章时共有158条记录，共16页，数据量不大。
 
 <div style="text-align: center;">
-<img src="/images/amac_fundhouse.png" width="650" >
+<img src="/images/amac_fundhouse.png" width="800" >
 </div>
 
 !!! warning

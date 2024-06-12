@@ -1,7 +1,7 @@
 ---
-title: 博客
+title: 研究笔记
 hide:
   - footer
 ---
 
-# 我的文章
+# 研究笔记

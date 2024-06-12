@@ -1,0 +1,32 @@
+# git
+git add .
+git commit -m $''$
+git push origin main
+
+# mkdocs material
+mkdocs serve
+
+# markdown
+## html
+<div style="text-align: center;">
+<img src="/images/xxx.png" width="600" >
+</div>
+
+<a href="https://xxx" target="_blank">
+annotation
+</a>
+
+## code block
+```python  linenums="1" hl_lines="5-10"
+code...
+```
+
+## mermaid
+``` mermaid
+graph TD
+  A{main.js};
+  A --> B[subfile_1.js];
+  A --> C[subfile_2.js];
+  A --> D[...];
+  A --> E[subfile_n.js];
+```

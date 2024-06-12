@@ -17,6 +17,10 @@ Do stock prices follow random walk over day and night? –– evidence from Chin
 这篇论文中，我们使用了修改版的Variance Ratio Test和Filter Strategy分别在统计上和经济上检验了日内时段和隔夜时段收益率的随机游走性质。
 现在我来对这两种方法进行介绍并提供相应的Python代码。
 
+$$VR^{ND} = \frac{\text{Var}\left[ R^{CC}_t \right]}{\text{Var}\left[ R^N_t \right] + \text{Var}\left[ R^D_t \right]}$$
+
+$$VR^{DN} = \frac{\text{Var}\left[ R^{OO}_{t+1} \right]}{\text{Var}\left[ R^D_t \right] + \text{Var}\left[ R^N_{t+1} \right]}$$
+
 <!-- more -->
 ## Variance Ratio Test
 ### 基本原理
