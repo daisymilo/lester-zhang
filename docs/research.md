@@ -19,11 +19,12 @@ hide:
 
 > 此外，我们还发现疫情期间的超常收益率与未来收益率之间呈现负相关关系，这可能与投资者对疫情冲击的反应过度有关。
 
-> [:material-file-code: 主要估计方法与代码](posts/posts/COVID_excess_risk.md)
+[:material-file-code: 主要估计方法与代码](posts/posts/COVID_excess_risk.md)
 
 <div style="text-align: center;">
 <img src="/images/research_1.png" width="600" >
 </div>
+
 ---
 
 :material-octagram:&nbsp;<a href="https://doi.org/10.1080/00036846.2023.2298658" target="_blank">
@@ -36,7 +37,7 @@ hide:
 
 > 进一步地，考虑到中国市场的T+1制度对隔夜和日内交易行为有较大影响，我们对比了没有实行T+1制度的H股和B股，发现T+1制度能够缓解日内和隔夜时段之间的反应过度和反应不足。
 
-> [:material-file-code: 检验方法与代码](posts/posts/vr_and_filter_rule.md)
+[:material-file-code: 检验方法与代码](posts/posts/vr_and_filter_rule.md)
 
 <div style="text-align: center;">
 <img src="/images/research_2.png" width="500" >
@@ -44,34 +45,71 @@ hide:
 
 ---
 
-## 📝 Working Papers
+:material-octagram:&nbsp;<a href="https://doi.org/10.1016/j.econlet.2022.110509" target="_blank">
+                         **The effect of relaxing daily price limit: Evidence from the ChiNext market of China**
+                         </a>, with Wan Xiaoyuan, **_Economics Letters_**, 2022. (SSCI Q3, ABS ratings 3)
 
-"[**Lone (Loan) Wolf Pack Risk**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4331418)", with Iftekhar Hasan, Buhui Qiu and Eliza Wu.
+<div class="annotate" markdown>
+> 自1996年12月开始，中国股票沪深两市就施行了10%涨跌幅限制。
+> 直到2020年8月24日，注册制在深市创业板进行试点，涨跌幅限制首次从10%放宽到20%.
 
-- WFA 2023, FIRN 2023, FIRN Banking 2022, Curtin University, Massey University, National Central University, University of Essex, University of Sydney.
-- ___FIRN 2023 Best Paper Award___.
-- SUERF Policy Brief [No. 586](https://www.suerf.org/suer-policy-brief/66891/the-big-problem-of-small-syndicates), Bank of Finland Research Discussion Paper [No. 4/2023](https://ssrn.com/abstract=4391791).
+> 这一准自然实验使得我们能够探究施加涨跌幅限制会有怎样的影响，
+> 同期没有进行试点的沪深主板股票依旧遵循10%涨跌幅限制，也为我们使用DID提供了便利。
 
-"**Anomalous Lending and Bank Risk**", with Iftekhar Hasan, Buhui Qiu, Eliza Wu and Yan Yu.
+> 我们发现，在事件日及随后一段时间，市场的超常收益率显著为正。
+> 在市场质量方面，涨跌幅限制的放宽没有显著改变价格效率(1)，但显著提高了市场的流动性(2)和收益的波动性(3)。
+</div>
 
-- FIRN 2023, Monash Winter Finance 2023, Machine Learning Methods for Business Workshop 2023,  BFBRG Workshop 2022, Deakin University, Loughborough University, University of Queensland, University of Sydney.
+1. :bulb:使用$|\rho|$ 和 $|VR|$度量，$|\rho|$ 为个股收益率与滞后市场收益率的相关系数；$|VR|$ 为Variance Ratio的绝对值
+2. :bulb:使用$TO$和$ILLIQ$度量，$TO$为股票换手率；$ILLIQ$为Amihud (2002)提出的非流动性指标
+3. :bulb:使用$BETA$ 和 $IVOL$度量，$BETA$为市场模型的$\beta$系数；$IVOL$为特质波动率，为市场模型残差的标准差
 
-"[**Borrower Technology Similarity and Bank Loan Contracting**"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4579677), with Yunying Huang, Steven Ongena and Eliza Wu.
+<div style="text-align: center;">
+<img src="/images/research_3.png" width="450" >
+</div>
 
-- SFS Cavalcade 2024 (scheduled), EFA 2023 (poster), FMA 2023, 35th AFBC.
-- Semifinalist for ___FMA 2023 Best Paper Awards___.
-- CEPR Discussion Paper [DP18624](https://cepr.org/publications/dp18624).
+---
 
-"**Corporate Real Estate Holdings and M&As**", with Thanh Son Luong and Buhui Qiu.
+:material-octagram:&nbsp;<a href="https://kns.cnki.net/kcms2/article/abstract?v=0rU-DchPtsvK5medBcSPdUANz9-4kwHcCfMm7oLGPMbURNzqxFkZt_sQgVIUhRWPyplH9hHmdl2zBYV0jTEridDS_qyYFWdOWiNRf4gYtPmw0yrb4fhp-zplyAOK8pp-XaNu2gnhoIGi2jyy8RQ6sA==&uniplatform=NZKPT&language=CHS" target="_blank">
+                         **网络平台互动、策略性回应与股票错误定价**
+                         </a>， 合作者：徐寿福 和 郑迎飞， **_经济管理_**， 2023. (CSSCI)
 
-- FMA 2022, FIRN 2022.
+<div class="annotate" markdown>
 
-"[**Catering to Environmental Premium in Green Venture Financing: Evidence from a BERT-based Deep Learning Approach**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4522222)", with Henry Leung, Tse-Chun Lin and Tracy Thi Vu.
+> 在投资者互动平台上(1)，公司在回复中夹杂大量客套话的回应模式既满足了及时回复的监管要求，
+> 又避免了向投资者透露有效信息，使得上市公司能够回避特定信息或隐藏负面消息。
+> 我们将这种策略性回应手段称为“避实就虚”。
 
-- Journal of Contemporary Accounting and Economics Annual Symposium 2024, 7th Advances in Venture Capital and Private Equity Research Workshop.
+> 对“避实就虚”策略性回应进行测度后(2)，我们发现这种回应策略会加剧公司股票错误定价，
+> 并造成股价低估。进一步研究发现，投资者规模越大、上市公司信息透明度越差，
+> 策略性回应对错误定价的驱动效应越显著。
 
-"**Liquidity and Price Impact at the 52 Week High**", with Joshua Della Vedova, Andrew Grant and Joakim Westerholm.
+</div>
 
-## 🧑‍🎓 Student Supervision
+1. :bulb:即投资者与上市公司进行互动的平台，国内主要的投资者互动平台包括深市“互动易”和沪市“上证e互动”
+2. :bulb:主要通过正则表达式捕捉上市公司回复中的客套话
 
-- Meitong He, Honours student at University of Sydney, 2023 (co-supervision with Buhui Qiu). Graduated with First Class Honours.
+<div style="text-align: center;">
+<img src="/images/research_4.png" width="500" >
+</div>
+
+---
+
+:material-octagram:&nbsp;<a href="/files/善拿牌照的唯品会：二线电商的互金之路.pdf" target="_blank">
+                         **善拿牌照的唯品会——二线电商的互金之路**
+                         </a>，合作者：郑迎飞， **_全国优秀金融硕士教学案例_**， 2021. (国家级案例库，案例编号AL2021055)
+
+> 唯品会作为中国知名的二线电商，通过获取多种金融牌照，积极拓展互联网金融业务。
+> 然而，相较于一线电商，唯品会在经营持牌金融业务时面临更大的生存压力和挑战。
+> 我们通过案例详细展示了唯品会近十年来争取各种金融牌照的历程，剖析了其关键战略决策，并探讨了其电商业务与金融业务之间的协同与矛盾。
+
+<div style="text-align: center;">
+<img src="/images/research_5.png" width="450" >
+</div>
+
+## 📝 工作论文
+:material-octagram:&nbsp;**管理层回复模板化的股价效应——基于“上证 e 互动”的实证研究**, 
+合作者: 郑迎飞 和 卞世博，<br>投稿**_会计研究_**. (已通过四审，现已返回第五次修订稿)
+
+## 🧑‍🎓 助研成果
+

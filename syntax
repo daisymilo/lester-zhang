@@ -7,6 +7,16 @@ git push origin main
 mkdocs serve
 
 # markdown
+## posts
+---
+date:
+categories:
+  -
+tags:
+  -
+---
+
+
 ## html
 <div style="text-align: center;">
 <img src="/images/xxx.png" width="600" >
@@ -16,10 +26,18 @@ mkdocs serve
 annotation
 </a>
 
+&nbsp;&nbsp; // for multiple spaces
+
 ## code block
 ```python  linenums="1" hl_lines="5-10"
 code...
 ```
+
+## annotation
+content content content (1), content content content
+{ .annotate }
+
+1. annotation content
 
 ## mermaid
 ``` mermaid
