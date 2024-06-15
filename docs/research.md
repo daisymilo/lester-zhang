@@ -72,7 +72,7 @@ hide:
 
 :material-octagram:&nbsp;<a href="https://kns.cnki.net/kcms2/article/abstract?v=0rU-DchPtsvK5medBcSPdUANz9-4kwHcCfMm7oLGPMbURNzqxFkZt_sQgVIUhRWPyplH9hHmdl2zBYV0jTEridDS_qyYFWdOWiNRf4gYtPmw0yrb4fhp-zplyAOK8pp-XaNu2gnhoIGi2jyy8RQ6sA==&uniplatform=NZKPT&language=CHS" target="_blank">
                          **网络平台互动、策略性回应与股票错误定价**
-                         </a>， 合作者：徐寿福 和 郑迎飞， **_经济管理_**， 2023. (CSSCI)
+                         </a>,合作者: 徐寿福 和 郑迎飞, **《经济管理》**,2023. (CSSCI)
 
 <div class="annotate" markdown>
 
@@ -97,7 +97,7 @@ hide:
 
 :material-octagram:&nbsp;<a href="/files/善拿牌照的唯品会：二线电商的互金之路.pdf" target="_blank">
                          **善拿牌照的唯品会——二线电商的互金之路**
-                         </a>，合作者：郑迎飞， **_全国优秀金融硕士教学案例_**， 2021. (国家级案例库，案例编号AL2021055)
+                         </a>，合作者：郑迎飞， **全国优秀金融硕士教学案例**， 2021. (国家级案例库，案例编号AL2021055)
 
 > 唯品会作为中国知名的二线电商，通过获取多种金融牌照，积极拓展互联网金融业务。
 > 然而，相较于一线电商，唯品会在经营持牌金融业务时面临更大的生存压力和挑战。
@@ -109,7 +109,31 @@ hide:
 
 ## 📝 工作论文
 :material-octagram:&nbsp;**管理层回复模板化的股价效应——基于“上证 e 互动”的实证研究**, 
-合作者: 郑迎飞 和 卞世博，<br>投稿**_会计研究_**. (已通过四审，现已返回第五次修订稿)
+合作者: 郑迎飞 和 卞世博，<br>**《会计研究》**在审. (已通过四审，现已返回第五次修订稿)
+
+> 上市公司和投资者的互动可以帮助投资者获取和理解信息，
+> 然而我们发现，在“上证e互动”平台上存在公司管理层采用复制粘贴相同内容的方式来敷衍投资者的现象，
+> 我们将这种行为称为“管理层回复模板化”。
+
+> 我们通过利文斯顿编辑距离来度量回复模板化的程度，
+> 实证结果表明回复模板化会带来显著的股价下跌，甚至导致股价崩盘。
+> 进一步检验发现，回复模板化不仅能够负向预测当期盈余，
+> 还会向投资者传递有关公司长期发展的负面信号。
+
+[:material-file-code: 模板化度量方法与代码](posts/posts/sim_lev.md)
+
+<div style="text-align: center;">
+<img src="/images/research_6.png" width="450" >
+</div>
+
+---
+
+:material-octagram:&nbsp;<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4634636" target="_blank">
+                         **(When) is Beta Priced in China?**
+                         </a>
+(SSRN), with Wan Xiaoyuan and George J. Jiang, <br>under review **_Journal of International Money and
+Finance_**. (SSCI Q2, ABS ratings 3)
+
 
 ## 🧑‍🎓 助研成果
 
