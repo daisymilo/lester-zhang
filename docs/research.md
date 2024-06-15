@@ -120,6 +120,11 @@ hide:
 > 进一步检验发现，回复模板化不仅能够负向预测当期盈余，
 > 还会向投资者传递有关公司长期发展的负面信号。
 
+> * **2022年研究生科研创新培育项目**
+> * **2022年优秀研究生学位论文培育项目**
+> * **2023届研究生优秀学位论文**
+> * **“注册制改革与多层次资本市场建设研究生学术论坛” 二等奖**
+
 [:material-file-code: 模板化度量方法与代码](posts/posts/sim_lev.md)
 
 <div style="text-align: center;">
@@ -134,6 +139,30 @@ hide:
 (SSRN), with Wan Xiaoyuan and George J. Jiang, <br>under review **_Journal of International Money and
 Finance_**. (SSCI Q2, ABS ratings 3)
 
+<div class="annotate" markdown>
+
+> 尽管CAPM模型预测beta较高的股票应该有更高的期望收益率，
+> 但是现有研究都表明美国市场的SML(1)可能是平坦的，甚至是向下倾斜的。
+
+> 与美国市场不同，已有的一系列文献均指出，中国市场价格同步性强，并且市场组合在风险因子中扮演重要角色，
+> 因此有理由猜测中国市场的beta可能会有正向溢价。
+
+> 的确，我们的实证结果表明，在中国市场beta和股票收益率呈现显著正相关，
+> 并且在市场风险较高(2)的子样本中，beta和收益的正相关更强。
+
+> 进一步将日度收益率分为隔夜和日内部分，我们发现beta只在日内存在正溢价，
+> 在隔夜时段，beta和收益率则没有显著联系，这一发现与美国市场相反。
+> 通过对比AH交叉(3)上市的股票样本，我们发现中国市场呈现的这种beta定价模式可能是由“T+1”交易制度导致的。
+
+</div>
+
+1. :bulb:即证券市场线security market line，描述市场beta与股票期望收益率
+2. :bulb:以市场模型$R^2$，EPU指数和宏观经济指标发布作为子样本选择依据
+3. :bulb:指公司既在A股上市，又在H股上市，其中A股遵循“T+1”规则，而H股遵顼“T+0”规则
+
+<div style="text-align: center;">
+<img src="/images/research_7.png" width="550" >
+</div>
 
 ## 🧑‍🎓 助研成果
 
