@@ -1,7 +1,7 @@
 ---
 date: 2024-04-12
 categories:
-    - 我的论文
+    - 实证研究
 tags:
     - Python
     - 已发表

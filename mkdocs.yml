@@ -43,6 +43,8 @@ theme:
     - navigation.path
     - navigation.indexes
     - navigation.top
+  icon:
+    annotation: material/information-variant-circle
 
 
 nav:

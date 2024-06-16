@@ -1,7 +1,7 @@
 ---
 date: 2024-06-15
 categories:
-  - 我的论文
+  - 数据处理与分析
 tags:
   - Python
   - 工作论文
