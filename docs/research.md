@@ -170,9 +170,10 @@ Finance_**. (SSCI Q2, ABS ratings 3)
 
 <div class="annotate" markdown>
 
-> 我们使用一种基于BERT大语言模型的分词技术，对上市公司年报进行启发式分词(1)，
-> 并利用DeBERTa大语言模型筛选出数据资产相关术语(2)，构建了一个企业数据资产配置词典(3)。
-> 基于该词典，我们统计了上市公司年报中数据资产配置相关术语的词频，
+> 我们创新地使用了一种基于BERT大语言模型的启发式分词技术(1)，
+> 对一系列数据资产相关的研究报告和政策文件进行启发式分词，
+> 并利用BERT的衍生模型筛选出数据资产相关术语(2)，构建了一个数据资产术语词典(3)。
+> 基于该词典，我们统计了上市公司年报中相关术语的词频，
 > 并构造标准化指标以反应公司数据资产配置水平。
 
 > 配置数据资产能够增强企业应对经济政策不确定性的能力，但也需要相应的资源投入。
@@ -183,14 +184,13 @@ Finance_**. (SSCI Q2, ABS ratings 3)
 > 但在技术水平和财务风险的制约下配置数据资产可能会带来负效益。
 
 > * **在“数据资产定价与金融创新”学术研讨会(2024) 进行报告**
-> 
 
 </div>
 
 1. :bulb:传统分词技术(例如jieba)主要基于一个预设的词典来对文本进行分词， 
 难以处理超出词典范围的新兴词汇。而启发式分词通常依据字符之间的语义关联性进行分词， 
 从而能够将新词正确分离出来。
-2. :bulb:筛选过程依靠DeBERTa模型处理零样本分类(Zero-Shot Classification)任务的能力，
+2. :bulb:筛选过程基于DeBERTa这一衍生模型，该模型具备处理零样本分类(Zero-Shot Classification)任务的能力，
 零样本分类是指不需要微调(Fine-Tuning)，直接依靠大语言模型预训练所得权重直接进行推断的能力。
 3. :bulb:我们还考虑了一种基于Word2Vec的替代技术方案，
 即利用启发式分词后的样本文本来训练（或基于现有模型微调）一组词向量，
@@ -200,7 +200,7 @@ Finance_**. (SSCI Q2, ABS ratings 3)
 :fontawesome-solid-file-pdf: 会议报告PPT
 </a>
 
-[:material-file-code: 词典构建方法与代码](posts/posts/digital_asset.md)
+[:material-file-code: BERT启发式分词与代码](posts/posts/digital_asset.md)
 
 <div style="text-align: center;">
 <img src="/images/research_8.png" width="400" >
