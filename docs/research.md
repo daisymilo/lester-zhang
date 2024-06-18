@@ -123,7 +123,7 @@ hide:
 > * **2022年研究生科研创新培育项目**
 > * **2022年优秀研究生学位论文培育项目**
 > * **2023届研究生优秀学位论文**
-> * **“注册制改革与多层次资本市场建设研究生学术论坛” 二等奖**
+> * **“注册制改革与多层次资本市场建设研究生学术论坛”(2022) 二等奖**
 
 [:material-file-code: 模板化度量方法与代码](posts/posts/sim_lev.md)
 
@@ -165,6 +165,7 @@ Finance_**. (SSCI Q2, ABS ratings 3)
 </div>
 
 ---
+
 :material-octagram:&nbsp;**经济政策不确定性与企业数据资产配置**, 
 合作者: 陈荣达 和 金骋路, 目标期刊**《中国管理科学》**. 
 
@@ -204,6 +205,41 @@ Finance_**. (SSCI Q2, ABS ratings 3)
 
 <div style="text-align: center;">
 <img src="/images/research_8.png" width="400" >
+</div>
+
+---
+
+:material-octagram:&nbsp;**The Overall And Extremely Low Return Spillovers Among Cryptocurrencies and Stock Markets: Evidence from the COVID-19**, 
+with Zheng Yingfei, target **Pacific-Basin Finance Journal**. (SSCI Q2)
+
+<div class="annotate" markdown>
+
+> 加密货币不受任何国家或政府控制，也没有单一机构或组织控制其流通和发行，
+> 作为一种金融资产，加密货币也不存在现金流。这些独特属性使得加密货币与传统资产相对“隔离”。
+> 一系列研究也表明加密货币与各类资产的价格动态也相对独立。据此我们猜测加密货币可能具有潜在的避险属性。
+
+> 在COIVD-19对市场带来巨大冲击的背景下，
+> 我们探究了代表性加密货币(1)与主要股票市场指数(2)之间的溢出效应。
+> 实证结果表明，无论是COVID-19疫情顶峰时期，还是在整体溢出较低的时期，加密货币都扮演冲击的净溢出角色(3)。
+> 基于交叉分位数分析(4)的结果表明，即使在出现极端收益率的情况下，加密货币价格和股票指数之间也没有显著的关联性。
+
+</div>
+
+1. :bulb:我们选择了当时市值最高的比特币(Bitcoin)，以太坊(Ethereum)和莱特币(Litecoin)
+2. :bulb:我们选择了美国标普500指数(S&P 500)，英国富时100指数(FTSE 100)和中国沪深300指数(SZSE 300)
+3. :bulb:采用Diebold and Yilmaz (2009)的Spillover Index方法。
+<br><br>Diebold, F.X. and Yilmaz, K., 2009. Measuring financial asset return and volatility spillovers, with application to global equity markets. The Economic Journal, 119(534), pp.158-171.
+4. :bulb:即Han et al. (2016)提出的cross-quantilogram方法。 
+<br><br>Han, H., Linton, O., Oka, T. and Whang, Y.J., 2016. The cross-quantilogram: Measuring quantile dependence and testing directional predictability between time series. Journal of Econometrics, 193(1), pp.251-270.
+
+<a href="/files/The_Overall_And_Extremely_Low_Return_Spillovers.pdf" target="_blank">
+:fontawesome-solid-file-pdf: Abstract & Methodologies
+</a>
+
+[:material-file-code: 爬取加密货币行情](posts/posts/crypto_trading.md)
+
+<div style="text-align: center;">
+<img src="/images/research_9.png" width="550" >
 </div>
 
 ## 🧑‍🎓 助研成果
