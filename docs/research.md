@@ -203,6 +203,8 @@ Finance_**. (SSCI Q2, ABS ratings 3)
 
 [:material-file-code: BERT启发式分词与代码](posts/posts/digital_asset.md)
 
+[:material-file-code: 爬取上市公司年报代码](posts/posts/fin_report.md)
+
 <div style="text-align: center;">
 <img src="/images/research_8.png" width="400" >
 </div>
