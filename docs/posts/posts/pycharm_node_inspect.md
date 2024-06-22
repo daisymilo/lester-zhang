@@ -1,5 +1,7 @@
 ---
-date: 2024-06-13
+date: 2023-12-12
+authors:
+  - zjc
 categories:
   - JS逆向
 tags:

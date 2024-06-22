@@ -1,5 +1,7 @@
 ---
-date: 2024-04-12
+date: 2024-06-05
+authors:
+  - zjc
 categories:
     - 论文复现
 tags:
@@ -13,6 +15,8 @@ Jun Pan and Qing Peng在<a href="https://papers.ssrn.com/sol3/papers.cfm?abstrac
 </a> 中提出，中国股票市场收益率在重要政府会议前48小时内会显著升高，这表明中国是一个自上而下的经济体，市场受到政策驱动。
 
 在这里，我对论文中的Figure 2和 Table 2进行复现，并提供代码。
+
+**Fig 2复现结果：**
 
 <div style="text-align: center;">
 <img src="/images/replicate_govt_meeting_fig2_replicate.png" width="550" >

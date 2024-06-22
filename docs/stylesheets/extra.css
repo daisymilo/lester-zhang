@@ -57,3 +57,8 @@ table {
 table th, table td {
     padding: 1px;
 }
+
+.indented {
+    text-indent: 0em; /* 第一行缩进 */
+    margin-left: 1em; /* 其余行缩进 */
+}

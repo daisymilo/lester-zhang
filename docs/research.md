@@ -244,5 +244,32 @@ with Zheng Yingfei, target **Pacific-Basin Finance Journal**. (SSCI Q2)
 <img src="/images/research_9.png" width="550" >
 </div>
 
-## 🧑‍🎓 助研成果
+## 🧑‍🎓 助研工作
+:fontawesome-solid-star: 助研 国家自然科学基金委员会青年项目《中国证券市场的 T+1 交易制度研究：基于隔夜与日内收益率的视角》, 
+2023-01至2025-12, 主持人: 万孝园
+
+> **助研成果：**
+
+> :material-octagram:&nbsp;<a href="https://doi.org/10.1016/j.jempfin.2024.101476" target="_blank">
+                         **Margin-buying, short-selling, and stock valuation: Why is the effect reversed over time in China?**
+                         </a>, Wan Xiaoyuan, **_Journal of Empirical Finance_**, 2024. (SSCI Q2, ABS ratings 3)
+
+> <div class="indented">助研工作：**数据处理**与**实证分析**
+    (Table 2到Table10, Figure 2, Figure 3)，助研致谢见论文PDF第1页下方。</div>
+
+---
+
+:fontawesome-solid-star: 助研 教育部人文社会科学研究项目《互联网消费金融创新、风险与监管-基于行为产业组织理论的研究》, 
+2018-07至2021-02, 主持人: 郑迎飞
+
+> **助研成果：**
+
+> :material-octagram:&nbsp;<a href="https://doi.org/10.1016/j.pacfin.2023.101971" target="_blank">
+                         **Spillover effects between internet financial industry and traditional financial industry: Evidence from the Chinese stock market**
+                         </a>, Zheng Yingfei et al., **_Pacific-Basin Finance Journal_**, 2023. (SSCI Q2)
+
+> <div class="indented">助研工作：**实证分析和可视化**(Figure 8和Figure9实证+绘图,
+    Figure 1到Figure 7绘图, Figure 10到Figure 13绘图)</div>
+
+> :material-octagram:&nbsp;参与撰写多份关于网络小额贷款的政府专报，其中**三份获得省部级领导批示**。
 

@@ -46,4 +46,4 @@ Jiachen Zhang, aka Lester Zhang, is previously a master's degree student in fina
 
 这个网站是通过[mkdocs-material](https://squidfunk.github.io/mkdocs-material/)制作的，并依靠[GitHub Pages](https://pages.github.com/)服务部署到互联网上。我还使用了阿里云的DNS解析服务设置了自定义的域名，也就是[lester-zhang.com](https://lester-zhang.com)，最后利用腾讯云的CDN加速服务优化了网站的访问速度。你可以跟随我撰写的教程来搭建一个类似的网站：
 
-:octicons-arrow-right-24: [我是如何搭建个人主页的](posts/posts/make_site.md)
+:octicons-gear-16: [我是如何搭建个人主页的](posts/posts/make_site.md)

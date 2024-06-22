@@ -72,9 +72,12 @@ extra:
 plugins:
   - search
   - blog:
+      post_date_format: 'yyyy'
+      authors_file: "{blog}/.authors.yml"
+      post_readtime: false
       blog_dir: posts
       post_url_format: "{slug}"
-      archive_toc: true
+      archive_toc: false
       categories_toc: true
       post_slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:

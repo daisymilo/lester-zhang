@@ -1,5 +1,7 @@
 ---
-date: 2024-06-20
+date: 2024-06-21
+authors:
+  - zjc
 categories:
   - 我的开源项目
 tags:
@@ -15,8 +17,8 @@ tags:
 </a>
 。我希望能够通过这个包，以简单几行代码就能实现常用的实证分析技术。据我所知，Python中还没有较为完善的用于实证资产定价研究的包。
 
-在这篇文章中，我将介绍这个包的第一个模块**sorting**，专门用于进行**Portfolio Sorting**也就是**排序法**。
-该模块支持独立和序贯排序，支持计算任意因子模型的alpha，能够以美观的HTML表格输出结果，并且提供将结果导出到word的功能。
+在这篇文章中，我将介绍这个包的第一个模块**sorting**，该模块用于实现**Portfolio Sorting**也就是**排序法**。
+主要功能包括独立和序贯排序，支持计算任意因子模型的alpha，能够以美观的HTML表格输出结果，并且提供将结果导出到word的功能。
 
 **输出效果：**
 <div style="text-align: center;">
@@ -60,14 +62,14 @@ from empiricalfin import sorting
 
 !!! warning
 
-    目前，py_empirical_fin只支持在jupyter notebook, jupyter lab或jupyer hub环境中使用，
+    目前，py_empirical_fin只支持在jupyter notebook, jupyter lab或jupyter hub环境中使用，
     因为结果输出使用到了jupyter的HTML渲染功能
 
 ## sorting模块
 sorting模块专门用于进行排序分析，目前版本支持最常用的**双变量排序法**
 
-### Portfolio Sorting介绍
-参考姜近勇和潘冠中的《金融计量学》p43 3.2排序分析，Portfolio Sorting的大致思路是：
+### 排序法介绍
+姜近勇和潘冠中在《金融计量学》p43 3.2排序分析中对排序法进行了如下阐述：
 
 1. **资产组合构造期：**利用t-1期的公司特征将所有股票从低到高排序。
 按照排序将所有股票分配到不同的序位中去，最高序位的股票具有最高的公司特征值，
