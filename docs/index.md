@@ -11,7 +11,7 @@ hide:
 
 张嘉宸，毕业于上海对外经贸大学，金融学专业，获**上海市优秀毕业生**，**研究生国家奖学金**等荣誉。
 主要研究领域为实证资产定价和金融市场微观结构，相关成果发表在**_Economics Letters_**,&nbsp;&nbsp;&nbsp;**_Applied Economics_**,
-&nbsp;**_The North American Journal of Economics and Finance_** 和
+&nbsp;**_North American Journal of Economics and Finance_** 和
 **《经济管理》**等期刊，此外还有多篇工作论文在
 **_Journal of International Money and Finance_** 和**《会计研究》**等期刊审稿中。
 
