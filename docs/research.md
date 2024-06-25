@@ -11,7 +11,7 @@ hide:
 
 :material-octagram:&nbsp;<a href="https://doi.org/10.1016/j.najef.2023.102004" target="_blank">
                          **Systematic COVID risk, idiosyncratic COVID risk and stock returns**
-                         </a>, with Wan Xiaoyuan, &nbsp;&nbsp;&nbsp; **_North American Journal of Economics and Finance_**, 2024. (Corresponding author, SSCI Q2)
+                         </a>, with Wan Xiaoyuan, &nbsp;&nbsp;&nbsp; **_The North American Journal of Economics and Finance_**, 2024. (Corresponding author, SSCI Q2)
 
 > 在这篇论文中，我们使用了一种基于事件的方法来捕捉个股在COVID-19疫情期间产生的额外系统性风险、额外特质性风险以及超常收益率。
 
