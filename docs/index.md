@@ -10,12 +10,13 @@ hide:
 <img id="hide-on-large" src="/images/profile.png" width="30%">
 
 张嘉宸，毕业于上海对外经贸大学，金融学专业，获**上海市优秀毕业生**，**研究生国家奖学金**等荣誉。
-主要研究领域为实证资产定价和金融市场微观结构，相关成果发表在**_Economics Letters_**,&nbsp;&nbsp;&nbsp;**_Applied Economics_**,
-&nbsp;**_The North American Journal of Economics and Finance_** 和
-**《经济管理》**等期刊，此外还有多篇工作论文在
+研究领域包括实证资产定价、&nbsp;&nbsp;
+金融市场微观结构和公司金融，相关成果发表在&nbsp;&nbsp;**_The North American Journal of Economics and Finance_**,&nbsp;&nbsp;&nbsp;**_Economics Letters_**,&nbsp;&nbsp;&nbsp;&nbsp;
+**_Applied Economics_**
+和**《经济管理》**等期刊，此外还有多篇工作论文在
 **_Journal of International Money and Finance_** 和**《会计研究》**等期刊审稿中。
 
-Jiachen Zhang, aka Lester Zhang, is previously a master's degree student in finance at Shanghai University of International Business and Economics. With a focus on empirical asset pricing and market microstructure, his work has been published at journals including **_Economics Letters_**, **_Applied Economics_**, **_The North American Journal of Economics and Finance_**, **《经济管理》**, and/or under review at **_Journal of International Money and Finance_**, **《会计研究》**. 
+Jiachen Zhang, aka Lester Zhang, is previously a master's degree student in finance at Shanghai University of International Business and Economics. With a focus on empirical asset pricing, market microstructure and corporate finance, his work has been published at journals including **_The North American Journal of Economics and Finance_**, **_Economics Letters_**, **_Applied Economics_**, **《经济管理》**, and/or under review at **_Journal of International Money and Finance_**, **《会计研究》**. 
 
 <!--:octicons-arrow-right-24: [个人简历](/cv.pdf)-->
 
