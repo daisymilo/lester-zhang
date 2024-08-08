@@ -19,6 +19,9 @@ Jiachen Zhang, aka Lester Zhang, is previously a master's degree student in fina
 
 <!--:octicons-arrow-right-24: [个人简历](/cv.pdf)-->
 
+<br>
+[:fontawesome-solid-trophy: 学术研究](research.md){ .md-button} &nbsp;&nbsp;&nbsp; [:material-note-edit: 研究笔记](posts/index.md){ .md-button}
+
 ## 教育经历
 
 - 2020 - 2023 硕士 金融学 上海对外经贸大学

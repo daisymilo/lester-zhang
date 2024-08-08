@@ -45,3 +45,14 @@
   </div>
   {% endif %}
 {% endblock %}
+
+{% block content %}
+  <article class="md-content__inner md-typeset">
+    <div>{{ page.content }}</div>
+  </article>
+  <br>
+  <br>
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="/" class="md-button">返回主页</a>
+  </div>
+{% endblock %}

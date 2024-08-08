@@ -276,4 +276,3 @@ with Zheng Yingfei, target **Pacific-Basin Finance Journal**. (SSCI Q2)
     Figure 1到Figure 7绘图, Figure 10到Figure 13绘图)</div>
 
 > :material-octagram:&nbsp;参与撰写多份关于网络小额贷款的政府专报，其中**三份获得省部级领导批示**。
-
