@@ -11,7 +11,7 @@ hide:
 
 :material-octagram:&nbsp;<a href="https://doi.org/10.1016/j.najef.2023.102004" target="_blank">
                          **Systematic COVID risk, idiosyncratic COVID risk and stock returns**
-                         </a>, with Wan Xiaoyuan, &nbsp;&nbsp;&nbsp; **_The North American Journal of Economics and Finance_**, 2024. (Corresponding author, SSCI Q2)
+                         </a>, with Wan Xiaoyuan, &nbsp;&nbsp;&nbsp; **_The North American Journal of Economics and Finance_**, 2024. (**Corresponding author**, &nbsp;&nbsp;&nbsp;&nbsp;SSCI Q2)
 
 > COVID-19疫情对全球经济和金融市场产生了深远的影响，但少有文献探究个股在疫情冲击下的风险暴露变化。
 > 我们提出了一种基于事件的方法估计COVID-19疫情期间的额外风险，并分析了该风险与未来股票回报的关系。
@@ -33,7 +33,7 @@ hide:
 
 :material-octagram:&nbsp;<a href="https://doi.org/10.1080/00036846.2023.2298658" target="_blank">
                          **Do stock prices follow random walk over day and night? –– evidence from Chinese stock market**
-                         </a>, with Wan Xiaoyuan and Shen Sichao, **_Applied Economics_**, 2023. (Corresponding author, SSCI Q2)
+                         </a>, with Wan Xiaoyuan and Shen Sichao, **_Applied Economics_**, 2023. (**Corresponding author**, SSCI Q2)
 
 > Lou, Polk, and Skouras (2019)指出在日内时段和隔夜时段活跃的交易者属于两个不同的投资者群体，由于二者在行为上存在显著差异，我们据此怀疑日内时段和隔夜时段的股票收益率可能会违背随机游走假设。
 
@@ -76,7 +76,7 @@ hide:
 
 :material-octagram:&nbsp;<a href="https://kns.cnki.net/kcms2/article/abstract?v=0rU-DchPtsvK5medBcSPdUANz9-4kwHcCfMm7oLGPMbURNzqxFkZt_sQgVIUhRWPyplH9hHmdl2zBYV0jTEridDS_qyYFWdOWiNRf4gYtPmw0yrb4fhp-zplyAOK8pp-XaNu2gnhoIGi2jyy8RQ6sA==&uniplatform=NZKPT&language=CHS" target="_blank">
                          **网络平台互动、策略性回应与股票错误定价**
-                         </a>,合作者: 徐寿福 和 郑迎飞, **《经济管理》**,2023. (CSSCI)
+                         </a>,合作者: 徐寿福 和 郑迎飞,**《经济管理》**,2023. (CSSCI)
 
 <div class="annotate" markdown>
 
@@ -101,7 +101,7 @@ hide:
 
 :material-octagram:&nbsp;<a href="/files/善拿牌照的唯品会：二线电商的互金之路.pdf" target="_blank">
                          **善拿牌照的唯品会——二线电商的互金之路**
-                         </a>，合作者：郑迎飞， **全国优秀金融硕士教学案例**， 2021. (国家级案例库，案例编号AL2021055)
+                         </a>,合作者:郑迎飞, **全国优秀金融硕士教学案例**， 2021. (国家级案例库，案例编号AL2021055)
 
 > 唯品会作为中国知名的二线电商，通过获取多种金融牌照，积极拓展互联网金融业务。
 > 然而，相较于一线电商，唯品会在经营持牌金融业务时面临更大的生存压力和挑战。
@@ -113,7 +113,7 @@ hide:
 
 ## 📝 工作论文
 :material-octagram:&nbsp;**管理层回复模板化的股价效应——基于“上证 e 互动”的实证研究**, 
-合作者: 郑迎飞 和 卞世博，<br>**《会计研究》**在审. (已通过四审，现已返回第五次修订稿)
+合作者:郑迎飞 和 卞世博，<br>**《会计研究》**在审. (已通过四审，现已返回第五次修订稿)
 
 > 上市公司和投资者的互动可以帮助投资者获取和理解信息，
 > 然而我们发现，在“上证e互动”平台上存在公司管理层采用复制粘贴相同内容的方式来敷衍投资者的现象，
