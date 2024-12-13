@@ -137,11 +137,8 @@ hide:
 
 ---
 
-:material-octagram:&nbsp;<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4634636" target="_blank">
-                         **(When) is Beta Priced in China?**
-                         </a>
-(SSRN), with Wan Xiaoyuan and George J. Jiang, <br>under review **_Journal of International Money and
-Finance_**. (SSCI Q2, ABS ratings 3)
+:material-octagram:&nbsp;
+                         **(When) is Beta Priced in China?**, with Wan Xiaoyuan, **_Journal of Empirical Finance_** <br>under review. (SSCI Q2, ABS ratings 3)
 
 <div class="annotate" markdown>
 
