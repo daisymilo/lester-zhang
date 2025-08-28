@@ -8,6 +8,77 @@ hide:
 # 学术研究
 
 ## 📄 公开发表
+:material-octagram:&nbsp;<a href="https://kns.cnki.net/kcms2/article/abstract?v=Y2E-z2Sa5CMHx2yxy_Xr47EsDX6tFBj0RQUpE18qfZAc4jdNtYeGfM5PRA-p0CzGjmh2pk8CM0oYluyEYXHfDTJ2-HMKLu3LRqhnKo0GMQw_3FjVOKamiq70ynv_A8-sO-gDvwqHAMR63OMWUnnnGzpJ3vtMm3SHc584g05euQ0=&uniplatform=NZKPT" target="_blank">
+                        **管理层回复模板化的股价效应——基于“上证 e 互动”的实证研究**, 
+                        </a>,合作者: 郑迎飞 和 卞世博，**《会计研究》**,2025. (CSSCI)
+
+> 上市公司和投资者的互动可以帮助投资者获取和理解信息，
+> 然而我们发现，在“上证e互动”平台上存在公司管理层采用复制粘贴相同内容的方式来敷衍投资者的现象，
+> 我们将这种行为称为“管理层回复模板化”。
+
+> 我们通过利文斯顿编辑距离来度量回复模板化的程度，
+> 实证结果表明回复模板化会带来显著的股价下跌，甚至导致股价崩盘。
+> 进一步检验发现，回复模板化不仅能够负向预测当期盈余，
+> 还会向投资者传递有关公司长期发展的负面信号。
+
+> * **2022年研究生科研创新培育项目**
+> * **2022年优秀研究生学位论文培育项目**
+> * **2023届研究生优秀学位论文**
+> * **“注册制改革与多层次资本市场建设研究生学术论坛”(2022) 二等奖**
+
+[:material-file-code: 模板化度量方法与代码](posts/posts/sim_lev.md)
+
+<div style="text-align: center;">
+<img src="/images/research_6.png" width="450" >
+</div>
+
+---
+
+:material-octagram:&nbsp;<a href="https://doi.org/10.1016/j.iref.2024.103783" target="_blank">
+                         **Navigating uncertainty: The impact of economic policy on corporate data asset allocation**
+                         </a>, with Chen Rongda and Jin Chenglu, &nbsp;**_International Review of Economics & Finance_**, 2025. (SSCI Q2)
+
+<div class="annotate" markdown>
+
+> 我们创新地使用了一种基于BERT大语言模型的启发式分词技术(1)，
+> 对一系列数据资产相关的研究报告和政策文件进行启发式分词，
+> 并利用BERT的衍生模型筛选出数据资产相关术语(2)，构建了一个数据资产术语词典(3)。
+> 基于该词典，我们统计了上市公司年报中相关术语的词频，
+> 并构造标准化指标以反应公司数据资产配置水平。
+
+> 配置数据资产能够增强企业应对经济政策不确定性的能力，但也需要相应的资源投入。
+> 我们希望基于对年报文本的挖掘，探究经济政策环境变化下的企业数据资产配置变化。
+> 实证结果表明，平均而言，当经济政策不确定性升高时，企业反而倾向于减少数据资产配置，
+> 并且这种效应主要集中在低科技企业。
+> 机制分析表明，尽管配置数据资产能够在经济政策环境变化时控制经营成本和经营风险，
+> 但在技术水平和财务风险的制约下配置数据资产可能会带来负效益。
+
+> * **在“数据资产定价与金融创新”学术研讨会(2024) 进行报告**
+
+</div>
+
+1. :bulb:传统分词技术(例如jieba)主要基于一个预设的词典来对文本进行分词， 
+难以处理超出词典范围的新兴词汇。而启发式分词通常依据字符之间的语义关联性进行分词， 
+从而能够将新词正确分离出来。
+2. :bulb:筛选过程基于DeBERTa这一衍生模型，该模型具备处理零样本分类(Zero-Shot Classification)任务的能力，
+零样本分类是指不需要微调(Fine-Tuning)，直接依靠大语言模型预训练所得权重直接进行推断的能力。
+3. :bulb:我们还考虑了一种基于Word2Vec的替代技术方案，
+即利用启发式分词后的样本文本来训练（或基于现有模型微调）一组词向量，
+然后基于词向量相似度（例如余弦相似度）来筛选出数据资产相关术语。
+
+<a href="/files/epu_digital_asset.pdf" target="_blank">
+:fontawesome-solid-file-pdf: 会议报告PPT
+</a>
+
+[:material-file-code: BERT启发式分词与代码](posts/posts/digital_asset.md)
+
+[:material-file-code: 爬取上市公司年报代码](posts/posts/fin_report.md)
+
+<div style="text-align: center;">
+<img src="/images/research_8.png" width="400" >
+</div>
+
+---
 
 :material-octagram:&nbsp;<a href="https://doi.org/10.1016/j.najef.2023.102004" target="_blank">
                          **Systematic COVID risk, idiosyncratic COVID risk and stock returns**
@@ -112,27 +183,24 @@ hide:
 </div>
 
 ## 📝 工作论文
-:material-octagram:&nbsp;**管理层回复模板化的股价效应——基于“上证 e 互动”的实证研究**, 
-合作者:郑迎飞 和 卞世博，<br>**《会计研究》**在审. (已通过四审，现已返回第五次修订稿)
+:material-octagram:&nbsp; **什么导致了应收账款逆票据化？——监管升级与“影子票据”替代下的企业行为变化**,合作者: 冯芸，目标期刊：**《金融研究》**. (CSSCI)
 
-> 上市公司和投资者的互动可以帮助投资者获取和理解信息，
-> 然而我们发现，在“上证e互动”平台上存在公司管理层采用复制粘贴相同内容的方式来敷衍投资者的现象，
-> 我们将这种行为称为“管理层回复模板化”。
+> 随着我国票据市场基础设施和监管体系的不断完善，理论上应收账款的票据化趋势应该逐渐增强。
+> 然而，企业的实际行为却呈现出“逆票据化”特征，票据化率逐年下降。
 
-> 我们通过利文斯顿编辑距离来度量回复模板化的程度，
-> 实证结果表明回复模板化会带来显著的股价下跌，甚至导致股价崩盘。
-> 进一步检验发现，回复模板化不仅能够负向预测当期盈余，
-> 还会向投资者传递有关公司长期发展的负面信号。
+> 以2021年《规范商业承兑汇票信息披露有关事宜》的实施作为准自然实验，
+> 我们发现，票据信息披露政策显著降低了企业的应收账款票据化率。
+> 机制分析表明，票据信息披露带来的市场透明度提升，一方面加强了企业对票据信用风险的甄别，另一方面遏制了违规贴现活动，将具有潜在风险的票据排挤出市场，构成制度变化的短期成本。
+> 此外，近年来兴起的“影子票据”对传统票据呈现出明显的替代作用，可能形成规避票据监管的渠道，加剧“逆票据化”的趋势。
 
-> * **2022年研究生科研创新培育项目**
-> * **2022年优秀研究生学位论文培育项目**
-> * **2023届研究生优秀学位论文**
-> * **“注册制改革与多层次资本市场建设研究生学术论坛”(2022) 二等奖**
+> * **2025 CFRN青年金融学者年会 优秀论文**
 
-[:material-file-code: 模板化度量方法与代码](posts/posts/sim_lev.md)
+<a href="/files/CFRN2025_presentation.pdf" target="_blank">
+:fontawesome-solid-file-pdf: 会议报告PPT
+</a>
 
 <div style="text-align: center;">
-<img src="/images/research_6.png" width="450" >
+<img src="/images/research_10.png" width="550" >
 </div>
 
 ---
@@ -167,53 +235,8 @@ hide:
 
 ---
 
-:material-octagram:&nbsp;**经济政策不确定性与企业数据资产配置**, 
-合作者: 陈荣达 和 金骋路, 目标期刊**《中国管理科学》**. 
-
-<div class="annotate" markdown>
-
-> 我们创新地使用了一种基于BERT大语言模型的启发式分词技术(1)，
-> 对一系列数据资产相关的研究报告和政策文件进行启发式分词，
-> 并利用BERT的衍生模型筛选出数据资产相关术语(2)，构建了一个数据资产术语词典(3)。
-> 基于该词典，我们统计了上市公司年报中相关术语的词频，
-> 并构造标准化指标以反应公司数据资产配置水平。
-
-> 配置数据资产能够增强企业应对经济政策不确定性的能力，但也需要相应的资源投入。
-> 我们希望基于对年报文本的挖掘，探究经济政策环境变化下的企业数据资产配置变化。
-> 实证结果表明，平均而言，当经济政策不确定性升高时，企业反而倾向于减少数据资产配置，
-> 并且这种效应主要集中在低科技企业。
-> 机制分析表明，尽管配置数据资产能够在经济政策环境变化时控制经营成本和经营风险，
-> 但在技术水平和财务风险的制约下配置数据资产可能会带来负效益。
-
-> * **在“数据资产定价与金融创新”学术研讨会(2024) 进行报告**
-
-</div>
-
-1. :bulb:传统分词技术(例如jieba)主要基于一个预设的词典来对文本进行分词， 
-难以处理超出词典范围的新兴词汇。而启发式分词通常依据字符之间的语义关联性进行分词， 
-从而能够将新词正确分离出来。
-2. :bulb:筛选过程基于DeBERTa这一衍生模型，该模型具备处理零样本分类(Zero-Shot Classification)任务的能力，
-零样本分类是指不需要微调(Fine-Tuning)，直接依靠大语言模型预训练所得权重直接进行推断的能力。
-3. :bulb:我们还考虑了一种基于Word2Vec的替代技术方案，
-即利用启发式分词后的样本文本来训练（或基于现有模型微调）一组词向量，
-然后基于词向量相似度（例如余弦相似度）来筛选出数据资产相关术语。
-
-<a href="/files/epu_digital_asset.pdf" target="_blank">
-:fontawesome-solid-file-pdf: 会议报告PPT
-</a>
-
-[:material-file-code: BERT启发式分词与代码](posts/posts/digital_asset.md)
-
-[:material-file-code: 爬取上市公司年报代码](posts/posts/fin_report.md)
-
-<div style="text-align: center;">
-<img src="/images/research_8.png" width="400" >
-</div>
-
----
-
 :material-octagram:&nbsp;**The Overall And Extremely Low Return Spillovers Among Cryptocurrencies and Stock Markets: Evidence from the COVID-19**, 
-with Zheng Yingfei, target **Pacific-Basin Finance Journal**. (SSCI Q2)
+with Zheng Yingfei, target **_Pacific-Basin Finance Journal_**. (SSCI Q2)
 
 <div class="annotate" markdown>
 
