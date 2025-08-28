@@ -1,0 +1,946 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Jiachen Zhang's personal website.">
+      
+      
+        <meta name="author" content="张嘉宸">
+      
+      
+      
+      
+        <link rel="next" href="../%E9%85%B7%E4%BA%91-%E5%89%A7%E9%9B%86%E6%92%AD%E5%87%BA%E6%97%B6%E9%97%B4%E6%95%B0%E6%8D%AE/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>我是如何搭建个人主页的 - Lester Zhang</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2022c5.5%200%2010-4.5%2010-10S17.5%202%2012%202%202%206.5%202%2012s4.5%2010%2010%2010m.3-14.71c.2-.18.44-.29.7-.29.27%200%20.5.11.71.29.19.21.29.45.29.71%200%20.27-.1.5-.29.71-.21.19-.44.29-.71.29-.26%200-.5-.1-.7-.29-.19-.21-.3-.44-.3-.71%200-.26.11-.5.3-.71m-2.5%204.68s2.17-1.72%202.96-1.79c.74-.06.59.79.52%201.23l-.01.06c-.14.53-.31%201.17-.48%201.78-.38%201.39-.75%202.75-.66%203%20.1.34.72-.09%201.17-.39.06-.04.11-.08.16-.11%200%200%20.08-.08.16.03.02.03.04.06.06.08.09.14.14.19.02.27l-.04.02c-.22.15-1.16.81-1.54%201.05-.41.27-1.98%201.17-1.74-.58.21-1.23.49-2.29.71-3.12.41-1.5.59-2.18-.33-1.59-.37.22-.59.36-.72.45-.11.08-.12.08-.19-.05l-.03-.06-.05-.08c-.07-.1-.07-.11.03-.2%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Lester Zhang" class="md-header__button md-logo" aria-label="Lester Zhang" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lester Zhang
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              我是如何搭建个人主页的
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="切换深色主题"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换深色主题" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="切换浅色主题"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换浅色主题" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../research/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  学术研究
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  研究笔记
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Lester Zhang" class="md-nav__button md-logo" aria-label="Lester Zhang" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lester Zhang
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    主页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../research/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    学术研究
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    研究笔记
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            研究笔记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../archive/2024/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    归档
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../category/js%E9%80%86%E5%90%91/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    分类
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置开发环境
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      制作网页
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      自定义域名
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cdn" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDN加速
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    回到主页
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="/images/profile2.png" alt="Lester Zhang">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          Lester Zhang
+                        
+                      </strong>
+                      <br>
+                      
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    元数据
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2023-10-25 00:00:00+00:00" class="md-ellipsis">2023</time>
+                      </div>
+                    </li>
+                    
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+                          <span class="md-ellipsis">
+                            分类于
+                            
+                              <a href="../category/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/">其他技术</a></span>
+                        </div>
+                      </li>
+                    
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+
+
+<h1 id="_1">我是如何搭建个人主页的</h1>
+<p>我发现单纯的PDF简历在篇幅和形式上有很大限制，早些时候我曾尝试在微信公众号上发布内容，但编辑繁琐并且功能匮乏，所以决定制作这个网站向大家展示和分享我的工作。</p>
+<div style="text-align: center;">
+<img src="/images/make_site_1.png" width="700" >
+</div>
+
+<!-- more -->
+
+<p>这个网站是通过mkdocs-material制作的，并借助GitHub Pages发布到互联网上。此外，我还使用了阿里云和腾讯云的服务设置了域名并加速网站访问（国内访问GitHub服务器较慢）。其中的主要花费是购买域名和CDN加速服务，也就是说，如果你不需要自定义域名或者针对国内访问加速的话，部署个人网站的财务成本是零（但你还是需要花费<strong>大约一个下午</strong>的时间）。</p>
+<p>我的整个部署流程是：<strong>配置开发环境<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span>制作和发布网页<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span>自定义域名<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span>CDN加速</strong>，我不会详细地介绍每一步如何操作，但我会将我所用到的资料都提供给你，并提醒你可能遇到的“坑”。</p>
+<h2 id="_2">配置开发环境</h2>
+<p>我在这里列出了我所用到的开发工具，你需要对这些工具有一些基本的了解。未来我会写一些相关的介绍，但在此之前你可能要查阅一些相关资料。</p>
+<p>网页制作是在python环境下进行的（<strong>但不需要编写任何python代码</strong>），这里我使用<a href="https://www.anaconda.com/download">anaconda</a>来安装和管理python环境，使用<a href="https://www.jetbrains.com/pycharm/download/?section=windows">pycharm</a>，来编写和测试网页。如果你有vscode，那么它可以完全代替pycharm。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>你可以在<a href="https://www.jetbrains.com/community/education/#students">这个</a>页面申请pycharm的教师/学生认证，从而免费使用pycharm</p>
+</div>
+<p>此外，我们还需要<a href="https://git-scm.com/downloads">Git</a>工具将网站同步到<a href="https://github.com/">GitHub</a>上，后续对网页的更新也一直需要用到它。如果你不熟悉Git和GitHub，你可以把GitHub当作一个网盘，每当你对电脑上的代码进行修改后Git可以帮你把变动同步到网盘上。此外，GitHub提供的Pages服务还能帮我们把网页发布到互联网上，让其他人可以访问，因此在开始前你需要注册一个GitHub账号。</p>
+<h2 id="_3">制作网页</h2>
+<p>我制作网页使用的是<a href="https://squidfunk.github.io/mkdocs-material/">mkdocs-material</a>，它可以帮助你用简单的markdown语法进行网页设计，而不需要编写html代码，例如下面是这个页面的一部分markdown代码：</p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gu">## 配置开发环境</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>我在这里列出了我所用到的开发工具，你需要对这些工具有一些基本的了解。未来我会写一些相关的介绍，但在此之前你可能要查阅一些相关资料。
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>网页制作是在python环境下进行的（**但不需要编写任何python代码**），这里我使用[anaconda](https://www.anaconda.com/download)来安装和管理python环境，使用[pycharm](https://www.jetbrains.com/pycharm/download/?section=windows)，来编写和测试网页。如果你有vscode，那么它可以完全代替pycharm。
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>!!! tip
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    你可以在[这个](https://www.jetbrains.com/community/education/#students)页面申请pycharm的教师/学生认证，从而免费使用pycharm
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>此外，我们还需要[Git](https://git-scm.com/downloads)工具将网站同步到[GitHub](https://github.com/)上，后续对网页的更新也一直需要用到它。
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>如果你不熟悉Git和GitHub，你可以把GitHub当作一个网盘，每当你对电脑上的代码进行修改后Git可以帮你把变动同步到网盘上。此外，GitHub提供的Pages服务还能帮我们把网页发布到互联网上，让其他人可以访问，因此在开始前你需要注册一个GitHub账号。
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>...
+</span></code></pre></div>
+<p>mkdocs-marterial提供了从制作到发布网页的<a href="https://squidfunk.github.io/mkdocs-material/getting-started/">新手教程</a>，<a href="https://www.youtube.com/watch?v=Q-YA_dA8C20&amp;ab_channel=JamesWillett">这个视频</a>（如果你能访问YouTube的话）也可以帮助你快速入门。 将制作好的网页发布到GitHub上非常简单，但你可能需要花一些时间来学习如何制作出你想要的网页效果，你可以参考我的<a href="https://github.com/daisymilo/lester-zhang/tree/main">源代码</a>。</p>
+<h2 id="_4">自定义域名</h2>
+<p>当你按照教程将网页发布后，页面的链接是这样的：<code>username.github.io/repository</code>，你可能想自定义一个容易记住的域名，就像本站的<code>lester-zhang.com</code>一样。</p>
+<p>首先，你需要到域名托管商注册你想要的域名，我选择的是<a href="https://wanwang.aliyun.com/domain/">阿里云域名注册</a>，但我更推荐<a href="https://dnspod.cloud.tencent.com/">腾讯云域名注册</a>，因为后面的CDN加速服务我们选择腾讯云的，这样就可以在同一个平台上进行。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>在阿里云或腾讯云注册域名都需要进行实名认证，认证过程较为繁琐，并且需要等待审核，你可能需要提前准备。或者你可以选择国外的域名托管服务，例如<a href="https://hk.godaddy.com/en">godaddy</a></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>在注册域名时会碰到<strong>域名备案</strong>的提示，我们可以忽略该要求。根据规定，国内服务器绑定的域名需要进行备案，但我们的域名是绑定在境外GitHub的服务器上，因此没有强制备案的要求</p>
+</div>
+<p>注册好域名之后就需要将域名解析到你的网页上面，这两篇文章提供了详细的指导：<a href="https://blog.csdn.net/m0_47520749/article/details/124768135">自定义域名教程2</a>和<a href="https://zhuanlan.zhihu.com/p/393050270">自定义域名教程2</a>。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>对于腾讯云和阿里云，教程中提到的DNS配置页面分别在：<a href="https://cloud.tencent.com/product/dns">腾讯云DNS配置</a>和<a href="https://wanwang.aliyun.com/domain/dns">阿里云DNS配置</a></p>
+</div>
+<h2 id="cdn">CDN加速</h2>
+<p>我们的网页是部署在境外的GitHub服务器上，国内访问速度较慢且不太稳定，可以通过CDN加速来缓解这一问题。这里我选择<a href="https://cloud.tencent.com/product/cdn">腾讯云的CDN加速服务</a>，因为其免费的证书有效期为1年，而阿里云只有3个月。这篇教程解释了CDN的原理并详细介绍了相关操作：<a href="https://zhuanlan.zhihu.com/p/393779644">CDN加速教程1</a>，这篇博客也介绍了相似的内容<a href="https://blog.csdn.net/m0_47520749/article/details/124768311">CDN加速教程2</a>。</p>
+<p>在配置CDN加速服务前需要购买流量，否则配置完成后网页无法访问。对于腾讯云，可以在CDN产品页面进行购买，资源包类型应选择<strong>流量</strong>，适合区域选择<strong>亚太1区</strong>，资源包规格选择<strong>100GB</strong></p>
+<div style="text-align: center;">
+<img src="/images/tencent_cloud1.png" width="500" >
+</div>
+
+<p>在跟随教程时，需要注意下面这些问题：</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>在添加域名时，需要添加顶级域名和二级域名，例如，我添加了<code>lester-zhang.com</code>和<code>www.lester-zhang.com</code>，并分别配置DNS解析，以保证两个链接都能够正常访问。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>使用CDN加速不需要在GitHub上设置<strong>Custom domain</strong>，而是需要在docs目录下新建名为CNAME的文件，在文件中写入你的域名。在设置CDN时，回源host需要与CNAME中填写的域名完全一致</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>如果你在<strong>验证域名</strong>环节一直失败，你需要检查你添加的DNS解析<strong>记录类型</strong>是否与要求的一致。教程中的记录类型为<strong>TXT</strong>，而有时腾讯云会要求设置记录类型为<strong>CNAME</strong></p>
+</div>
+<p>在完成全部配置后，还需要做下列检查工作：</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>需要在域名管理中检查<strong>HTTPS配置</strong>中的<strong>HTTPS服务</strong>是否打开，处于关闭状态时网页可能无法正常访问。该服务每月提供300万次免费的访问，足够我们的个人网站使用。
+<div style="text-align: center;">
+<img src="/images/tencent_cloud2.png" width="600" >
+</div></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>需要在域名管理中检查<strong>回源配置</strong>中的<strong>回源跟随301/302配置</strong>是否打开，处于关闭状态可能会影响CDN加速效果。</p>
+<p><div style="text-align: center;">
+<img src="/images/tencent_cloud4.png" width="600" >
+</div></p>
+</div>
+<p>待CDN服务部署完毕后，如果在概览页面可以看到<strong>用量概览</strong>出现变动，则说明CDN配置成功，网页已经成功上线。</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+        <br>
+        <br>
+        <div style="text-align: center; margin-top: 20px;">
+          <a href="/posts/" class="md-button">返回研究笔记主页</a>
+        </div>
+      
+    </article>
+  </div>
+
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+        
+          
+          <a href="../%E9%85%B7%E4%BA%91-%E5%89%A7%E9%9B%86%E6%92%AD%E5%87%BA%E6%97%B6%E9%97%B4%E6%95%B0%E6%8D%AE/" class="md-footer__link md-footer__link--next" aria-label="下一页: 酷云-剧集播出时间数据">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                酷云-剧集播出时间数据
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 <a href="">Jiachen Zhang</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/daisymilo/LesterZhang" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.action.edit", "content.action.view", "content.code.copy", "content.code.select", "content.code.annotate", "content.tabs.link", "toc.follow", "navigation.prune", "navigation.tabs", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

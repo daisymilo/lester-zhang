@@ -1,0 +1,1378 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Jiachen Zhang's personal website.">
+      
+      
+        <meta name="author" content="张嘉宸">
+      
+      
+      
+        <link rel="prev" href="../%E5%9F%BA%E4%BA%8Ebert%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%90%AF%E5%8F%91%E5%BC%8F%E5%88%86%E8%AF%8D%E6%96%B9%E6%B3%95/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>我开发的Python包——Portfolio Sorting排序法 - Lester Zhang</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2022c5.5%200%2010-4.5%2010-10S17.5%202%2012%202%202%206.5%202%2012s4.5%2010%2010%2010m.3-14.71c.2-.18.44-.29.7-.29.27%200%20.5.11.71.29.19.21.29.45.29.71%200%20.27-.1.5-.29.71-.21.19-.44.29-.71.29-.26%200-.5-.1-.7-.29-.19-.21-.3-.44-.3-.71%200-.26.11-.5.3-.71m-2.5%204.68s2.17-1.72%202.96-1.79c.74-.06.59.79.52%201.23l-.01.06c-.14.53-.31%201.17-.48%201.78-.38%201.39-.75%202.75-.66%203%20.1.34.72-.09%201.17-.39.06-.04.11-.08.16-.11%200%200%20.08-.08.16.03.02.03.04.06.06.08.09.14.14.19.02.27l-.04.02c-.22.15-1.16.81-1.54%201.05-.41.27-1.98%201.17-1.74-.58.21-1.23.49-2.29.71-3.12.41-1.5.59-2.18-.33-1.59-.37.22-.59.36-.72.45-.11.08-.12.08-.19-.05l-.03-.06-.05-.08c-.07-.1-.07-.11.03-.2%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pythonportfolio-sorting" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Lester Zhang" class="md-header__button md-logo" aria-label="Lester Zhang" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lester Zhang
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              我开发的Python包——Portfolio Sorting排序法
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="切换深色主题"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换深色主题" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="切换浅色主题"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换浅色主题" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../research/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  学术研究
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  研究笔记
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Lester Zhang" class="md-nav__button md-logo" aria-label="Lester Zhang" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lester Zhang
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    主页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../research/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    学术研究
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    研究笔记
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            研究笔记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../archive/2024/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    归档
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../category/js%E9%80%86%E5%90%91/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    分类
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用示例
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sorting" class="md-nav__link">
+    <span class="md-ellipsis">
+      sorting模块
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="sorting模块">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      排序法介绍
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      样例数据
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#doublesorting" class="md-nav__link">
+    <span class="md-ellipsis">
+      创建DoubleSorting实例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      计算排序结果
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      结果输出
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="结果输出">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTML输出结果
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#word" class="md-nav__link">
+    <span class="md-ellipsis">
+      Word输出结果
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他参数
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    回到主页
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="/images/profile2.png" alt="Lester Zhang">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          Lester Zhang
+                        
+                      </strong>
+                      <br>
+                      
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    元数据
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2024-06-21 00:00:00+00:00" class="md-ellipsis">2024</time>
+                      </div>
+                    </li>
+                    
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+                          <span class="md-ellipsis">
+                            分类于
+                            
+                              <a href="../category/%E6%88%91%E7%9A%84%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">我的开源项目</a></span>
+                        </div>
+                      </li>
+                    
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+        <a href="../../tags/#tag:python" class="md-tag">Python</a>
+      
+    
+      
+      
+      
+        <a href="../../tags/#tag:实证" class="md-tag">实证</a>
+      
+    
+      
+      
+      
+        <a href="../../tags/#tag:程序包" class="md-tag">程序包</a>
+      
+    
+  </nav>
+
+
+
+<h1 id="pythonportfolio-sorting">我开发的Python包——Portfolio Sorting排序法</h1>
+<p>我开发了一个Python包，叫做<strong>py_empirical_fin</strong>，
+<a href="https://pypi.org/project/py-empirical-fin/" target="_blank">
+这是PyPi项目地址
+</a>
+。我希望能够通过这个包，以简单几行代码就能实现常用的实证分析技术。据我所知，Python中还没有较为完善的用于实证资产定价研究的包。</p>
+<p>在这篇文章中，我将介绍这个包的第一个模块<strong>sorting</strong>，该模块用于实现<strong>Portfolio Sorting</strong>也就是<strong>排序法</strong>。
+主要功能包括独立和序贯排序，支持计算任意因子模型的alpha，能够以美观的HTML表格输出结果，并且提供将结果导出到word的功能。</p>
+<p><strong>输出效果：</strong></p>
+<div style="text-align: center;">
+<img src="/images/empirical_fin_1.png" width="550" >
+</div>
+
+<!-- more -->
+
+<h2 id="_1">使用示例</h2>
+<p>下面是使用<strong>sorting</strong>模块，根据公司特征FC1和公司特征FC2的双变量序贯排序代码，整个流程只需要3行代码：</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">empiricalfin</span><span class="w"> </span><span class="kn">import</span> <span class="n">sorting</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">ds</span> <span class="o">=</span> <span class="n">sorting</span><span class="o">.</span><span class="n">DoubleSorting</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">sortbys</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;FC1&quot;</span><span class="p">,</span> <span class="s2">&quot;FC2&quot;</span><span class="p">],</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>                           <span class="n">nqs</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="n">date</span><span class="o">=</span><span class="s2">&quot;month&quot;</span><span class="p">,</span> <span class="n">ret</span><span class="o">=</span><span class="s2">&quot;ret&quot;</span><span class="p">,</span> 
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>                           <span class="n">mkt_cap</span><span class="o">=</span><span class="s2">&quot;SIZE&quot;</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">result</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">sequential</span><span class="p">(</span><span class="n">vw</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">result</span><span class="o">.</span><span class="n">summary</span><span class="p">(</span><span class="n">rf_df</span><span class="o">=</span><span class="n">rf_df</span><span class="p">,</span> <span class="n">rf</span><span class="o">=</span><span class="s2">&quot;rf&quot;</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>               <span class="n">alpha_models</span><span class="o">=</span><span class="p">[</span><span class="n">ff3</span><span class="p">],</span> <span class="n">output_path</span><span class="o">=</span><span class="s2">&quot;./output.docx&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>接下来我会详细介绍使用方法</p>
+<h2 id="_2">安装</h2>
+<p>由于我已经将项目上传到了PyPi，因此你可以直接使用pip命令安装py_empirical_fin:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>py_empirical_fin
+</span></code></pre></div>
+<p>在python中使用如下代码导入sorting模块：</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">empiricalfin</span><span class="w"> </span><span class="kn">import</span> <span class="n">sorting</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>注意，导入时请使用名称empiricalfin，与项目名称py_empirical_fin不同</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>目前，py_empirical_fin只支持在jupyter notebook, jupyter lab或jupyter hub环境中使用，
+因为结果输出使用到了jupyter的HTML渲染功能</p>
+</div>
+<h2 id="sorting">sorting模块</h2>
+<p>sorting模块专门用于进行排序分析，目前版本支持最常用的<strong>双变量排序法</strong></p>
+<h3 id="_3">排序法介绍</h3>
+<p>姜近勇和潘冠中在《金融计量学》p43 3.2排序分析中对排序法进行了如下阐述：</p>
+<ol>
+<li><strong>资产组合构造期：</strong>利用t-1期的公司特征将所有股票从低到高排序。
+按照排序将所有股票分配到不同的序位中去，最高序位的股票具有最高的公司特征值，
+中间位股票的公司特征值次之，以此类推。</li>
+<li><strong>投资组合持有期：</strong>计算各序位股票组成的投资组合在t期的收益率</li>
+<li><strong>统计检验：</strong> 检验最高序位和最低序位之间的平均收益率之差。</li>
+</ol>
+<p>如果公司特征能够解释期望收益率的变化，那么平均收益率应该随着公司特征的值上升而增大，
+也就是随投资组合序位的增大而增大。</p>
+<div style="text-align: center;">
+<img src="/images/empirical_fin_2.jpg" width="300" >
+</div>
+
+<h3 id="_4">样例数据</h3>
+<p>现在我们以下列样例数据展示sorting模块的功能：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>code</th>
+<th>month</th>
+<th>ret</th>
+<th>FC1</th>
+<th>FC2</th>
+<th>SIZE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0</strong></td>
+<td>000001</td>
+<td>2000-01-31</td>
+<td>0.061891</td>
+<td>0.004058</td>
+<td>0.030987</td>
+<td>1.87E+10</td>
+</tr>
+<tr>
+<td><strong>1</strong></td>
+<td>000001</td>
+<td>2000-03-31</td>
+<td>0.00273</td>
+<td>0.017191</td>
+<td>0.099298</td>
+<td>1.96E+10</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>000001</td>
+<td>2000-04-30</td>
+<td>0.037016</td>
+<td>0.014715</td>
+<td>0.072115</td>
+<td>1.97E+10</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td><strong>560038</strong></td>
+<td>605599</td>
+<td>2023-11-30</td>
+<td>-0.02672</td>
+<td>0.0051</td>
+<td>0.067961</td>
+<td>8.13E+09</td>
+</tr>
+<tr>
+<td><strong>560039</strong></td>
+<td>605599</td>
+<td>2023-12-31</td>
+<td>0.104601</td>
+<td>0.002854</td>
+<td>0.033507</td>
+<td>7.91E+09</td>
+</tr>
+</tbody>
+</table>
+<p>这是一份A股2000-01到2023-12的月度数据，每个字段的含义如下：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>code</strong></td>
+<td>股票代码</td>
+</tr>
+<tr>
+<td><strong>month</strong></td>
+<td>月份</td>
+</tr>
+<tr>
+<td><strong>ret</strong></td>
+<td>简单收益率，以小数表示，不能是百分比</td>
+</tr>
+<tr>
+<td><strong>FC1</strong></td>
+<td>公司特征1</td>
+</tr>
+<tr>
+<td><strong>FC2</strong></td>
+<td>公司特征2</td>
+</tr>
+<tr>
+<td><strong>SIZE</strong></td>
+<td>公司市值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="doublesorting">创建DoubleSorting实例</h3>
+<p>现在我们希望根据FC1和FC2进行双变量排序，首先需要创建<strong>sorting</strong>模块下的<strong>DoubleSorting</strong>对象实例，
+DoubleSorting对象的构造函数共有6个参数：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>data</strong></td>
+<td>排序法所需数据，需要为DataFrame对象</td>
+</tr>
+<tr>
+<td><strong>sortbys</strong></td>
+<td>排序依据，包含公司特征1和公司特征2所在列名称的列表</td>
+</tr>
+<tr>
+<td><strong>nqs</strong></td>
+<td>分组数量，用列表传入两个公司特征分别对应的分组数量</td>
+</tr>
+<tr>
+<td><strong>date</strong></td>
+<td>数据中日期列的名称</td>
+</tr>
+<tr>
+<td><strong>ret</strong></td>
+<td>数据中收益率列的名称</td>
+</tr>
+<tr>
+<td><strong>mkt_cap</strong></td>
+<td>数据中市值所在列的名称</td>
+</tr>
+</tbody>
+</table>
+<p>假设我们的数据变量名是data，我们要根据FC1和FC2进行双变量的5组<span class="arithmatex">\(\times\)</span>5组的排序，
+可以根据下列代码创建DoubleSorting实例对象：</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># 创建DoubleSoring对象实例</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">ds</span> <span class="o">=</span> <span class="n">sorting</span><span class="o">.</span><span class="n">DoubleSorting</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">sortbys</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;FC1&quot;</span><span class="p">,</span> <span class="s2">&quot;FC2&quot;</span><span class="p">],</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>                           <span class="n">nqs</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="n">date</span><span class="o">=</span><span class="s2">&quot;month&quot;</span><span class="p">,</span> <span class="n">ret</span><span class="o">=</span><span class="s2">&quot;ret&quot;</span><span class="p">,</span> 
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>                           <span class="n">mkt_cap</span><span class="o">=</span><span class="s2">&quot;SIZE&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="_5">计算排序结果</h3>
+<p>我们可以选择序贯排序和独立排序两种排序方法，
+所谓序贯排序就是根据FC1排序后，在每个组内再次根据FC2排序，这样最终得到的25个组合的股票数量相等。</p>
+<p>而独立排序就是先对全体样本根据FC1排序，然后再对全体样本根据FC2排序，
+同时属于FC1排序最小组和FC2排序最小组的股票属于组合(1,1)，以此类推得到组合(1,2),(1,3),...,(5,5)。
+独立排序得到的25个组合，每个组合内的股票数量不一定相等。</p>
+<p>如果我们想执行序贯排序，则调用DoubleSorting实例的<strong>sequential</strong>方法，独立排序则对应<strong>independent</strong>方法：</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># 序贯排序</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">result</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">sequential</span><span class="p">(</span><span class="n">vw</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># 独立排序</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">result</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">independent</span><span class="p">(</span><span class="n">vw</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></code></pre></div>
+<p>其中参数<code>vw=False</code>表示等权重组合，而<code>vw=True</code>表示市值加权组合。</p>
+<p>调用sequential或independent方法后，程序会立即开始进行计算，需要等待片刻，
+待计算完成后会返回<strong>result</strong>对象，里面保存了计算结果。</p>
+<h3 id="_6">结果输出</h3>
+<p>对<strong>result</strong>对象调用<strong>summary</strong>方法即可输出结果：</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">result</span><span class="o">.</span><span class="n">summary</span><span class="p">(</span><span class="n">rf_df</span><span class="o">=</span><span class="n">rf_df</span><span class="p">,</span> <span class="n">rf</span><span class="o">=</span><span class="s2">&quot;rf&quot;</span><span class="p">,</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>               <span class="n">alpha_models</span><span class="o">=</span><span class="p">[</span><span class="n">ff3</span><span class="p">],</span> <span class="n">output_path</span><span class="o">=</span><span class="s2">&quot;./output.docx&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>summary</strong>方法有4个重要参数：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>rf_df</strong></td>
+<td>无风险收益率数据，需要为DataFrame对象</td>
+</tr>
+<tr>
+<td><strong>rf</strong></td>
+<td>数据中无风险收益率的列名</td>
+</tr>
+<tr>
+<td><strong>alpha_models</strong></td>
+<td>计算alpha所使用的因子模型数据，以列表传入，每个元素代表一个模型</td>
+</tr>
+<tr>
+<td><strong>output_path</strong></td>
+<td>结果导出到word文档的路径</td>
+</tr>
+</tbody>
+</table>
+<p>其中无风险收益率数据<strong>rf_df</strong>需要包含两列，<strong>日期列</strong>和<strong>无风险收益率列</strong>，
+日期列的名称和格式需要与创建DoubleSorting时的日期列名称<strong>一致</strong>（比如这里都叫month），程序会自动匹配对应日期的无风险收益率：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>month</th>
+<th>rf</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0</strong></td>
+<td>1991/12/31</td>
+<td>0.006092</td>
+</tr>
+<tr>
+<td><strong>1</strong></td>
+<td>1992/1/31</td>
+<td>0.006092</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td><strong>382</strong></td>
+<td>2023/10/31</td>
+<td>0.001241</td>
+</tr>
+<tr>
+<td><strong>383</strong></td>
+<td>2023/11/30</td>
+<td>0.001241</td>
+</tr>
+<tr>
+<td><strong>384</strong></td>
+<td>2023/12/31</td>
+<td>0.001241</td>
+</tr>
+</tbody>
+</table>
+<p><strong>alpha_models</strong>中所传入的因子模型数据也需要是DataFrame对象，且日期列的名称也需要和创建DoubleSorting时的日期列名称<strong>一致</strong>。
+例如，这里我想计算Fama-French三因子模型的alpha，那么我就传入如下数据ff3：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>month</th>
+<th>mkt_premium</th>
+<th>SMB</th>
+<th>HML</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0</strong></td>
+<td>1999/4/30</td>
+<td>-0.035693</td>
+<td>-0.01497</td>
+<td>0.032332</td>
+</tr>
+<tr>
+<td><strong>1</strong></td>
+<td>1999/5/31</td>
+<td>0.109583</td>
+<td>-0.04102</td>
+<td>-0.01723</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td><strong>5285</strong></td>
+<td>2023/10/31</td>
+<td>-0.029689</td>
+<td>0.032917</td>
+<td>-0.00698</td>
+</tr>
+<tr>
+<td><strong>5308</strong></td>
+<td>2023/11/30</td>
+<td>-0.001868</td>
+<td>0.05796</td>
+<td>-0.00766</td>
+</tr>
+<tr>
+<td><strong>5331</strong></td>
+<td>2023/12/31</td>
+<td>-0.015345</td>
+<td>0.000658</td>
+<td>0.001553</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>如果不需要计算因子模型的alpha,可以向alpha_models参数传入空列表。</p>
+</div>
+<h4 id="html">HTML输出结果</h4>
+<p>调用<strong>summary</strong>方法后得到的HTML输出如下：</p>
+<div style="text-align: center;">
+<img src="/images/empirical_fin_3.png" width="550" >
+</div>
+
+<p>其中，左上角的表格报告了25个组合的平均收益率，右上角的表格报告了每个FC1组合下，
+FC2最高组与最低组的收益率之差，即<strong>FC2 strategy</strong>。
+下方的表格报告了每个FC2组合下，FC1最高组与最低组的收益率之差，即<strong>FC1 strategy</strong>。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>t检验使用的均为Newey-West稳健t统计量，目前版本默认最大滞后阶数为5，
+未来的版本会添加最大滞后阶数可选项</p>
+</div>
+<h4 id="word">Word输出结果</h4>
+<p>下面是Word输出结果</p>
+<div style="text-align: center;">
+<img src="/images/empirical_fin_4.png" width="600" >
+</div>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>如果output_path参数传入None，则不进行Word输出</p>
+</div>
+<h4 id="_7">其他参数</h4>
+<p><strong>summary</strong>方法还有一些其他可选参数，可以根据需要添加：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>strategies</strong></td>
+<td>传入'HML'表示计算strategy时使用特征最高组减去特征最低组，如果传入'LMH'则相反</td>
+</tr>
+<tr>
+<td><strong>show_t</strong></td>
+<td>是否在左上角的各个组合平均收益率明细表格处显示t值</td>
+</tr>
+<tr>
+<td><strong>show_stars</strong></td>
+<td>是否在左上角的各个组合平均收益率明细表格处显示显著性星星</td>
+</tr>
+<tr>
+<td><strong>mean_decimal</strong></td>
+<td>平均收益率的小数位数，默认为3</td>
+</tr>
+<tr>
+<td><strong>t_decimal</strong></td>
+<td>t值得小数位数，默认为3</td>
+</tr>
+<tr>
+<td><strong>layout</strong></td>
+<td>结果表格的布局，传入'reverse'可以得到转置后的表格布局</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+        <br>
+        <br>
+        <div style="text-align: center; margin-top: 20px;">
+          <a href="/posts/" class="md-button">返回研究笔记主页</a>
+        </div>
+      
+    </article>
+  </div>
+
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../%E5%9F%BA%E4%BA%8Ebert%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%90%AF%E5%8F%91%E5%BC%8F%E5%88%86%E8%AF%8D%E6%96%B9%E6%B3%95/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 基于BERT大语言模型的启发式分词方法">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                基于BERT大语言模型的启发式分词方法
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 <a href="">Jiachen Zhang</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/daisymilo/LesterZhang" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.action.edit", "content.action.view", "content.code.copy", "content.code.select", "content.code.annotate", "content.tabs.link", "toc.follow", "navigation.prune", "navigation.tabs", "navigation.path", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
